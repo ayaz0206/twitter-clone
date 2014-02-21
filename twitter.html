@@ -1,11 +1,51 @@
+<!DOCTYPE html>
+
 <html>
 <head>
 <title>Twitter</title>
+
 	<link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="twitter.css"> 
 </head>
+
 <body>
+
+<header>
+
+	<a href="#">Home</a>
+	<a href="#">Connect</a>
+	<a href="#">Discover</a>
+	<a href="#">Me</a>
+
+	<img src="images/twitterlogo.png" />
+
+
+	<div class="search">
+		<form>
+			<input type="text" class="rounded" placeholder="Search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search'" />
+			<button type="submit"></button>
+		</form>
+	</div>
+
+</header>
+
+<section class="miniprofile">
+
+	<div class="pic">
+		<img src='images/pic2.jpg'>
+	</div>
+
+
+	<div class="stats">
+		<a href=""><p>TWEETS<br>270</p></a>
+		<a href=""><p>FOLLOWING<br>698</p></a>
+		<a href=""><p>FOLLOWERS<br>82</p></a>
+
+	</div>
+</section>
+
 	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
  	<script src="twitter.js" type="text/javascript"></script>
+
 </body>
 </html>
