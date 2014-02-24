@@ -14,21 +14,21 @@ header a {
 	color: #244C78;
 	padding: 14px 5px;
 	text-align: center;
-	font-family: Helvetica Neue, Arial, sans-serif;
 	margin-left: 25px;
 	margin-right: 0px;
 	cursor: pointer;
 	text-decoration: none;
 }
 
-/*header :hover {
+header a:hover {
 	border-bottom: 4px solid #244C78;
-}*/
+}
 
 body {
 	background-image: url('images/bg.png');
 	background-color: #C0DEED;
 	background-repeat: no-repeat;
+	font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .search {
@@ -48,8 +48,6 @@ form input[type="text"] {
 	-moz-border-radius:15px; 
 	-webkit-border-radius:15px;
 	color: white; 
-	font-family: Helvetica Neue, Arial, sans-serif;
-
 }
 
 form input:focus {
@@ -64,27 +62,149 @@ header img {
 }
 
 .miniprofile {
+	float: left;
 	background-color: white;
 	margin-top: 10px;
 	margin-left: 200px;
-	height: 250px;
 	width: 290px;
 	border-radius: 5px;
 }
 
  div.stats a {
-	
+
 	float: left;
 	text-decoration: none;
-	margin: 15px;
+	margin: 5px;
+	padding-left: 15px;
+	padding-top: 3px;
 	color:#999;
-	font-size: 12px;
+	font-size: 10px;
+}
+
+div.stats a:hover {
+	color: #0084B4;
 }
 
 
-div.pic img{
+div.pic2 img {
 	width: 290px;
-	height: 130px;
+	height: 150px;
 	border-radius: 5px 5px 0 0;
+	z-index: -1;
 }
+
+div.pic img {
+	height: 54px;
+	width: 54px;
+	z-index: 1;
+	position: absolute;
+	border-radius: 6px;
+	border: 3px solid white;
+}
+
+span.numbers {
+	font-size: 20px;
+	color: #0084B4;
+	line-height: 25px;
+	padding: 6px;
+}
+
+
+.write-tweet {
+	margin-top: 52px;
+	background-color: #E5F2F7;
+	text-align: center;
+	padding: 8px;
+	height: 35px;
+	border-radius: 0 0 5px 5px ;
+}
+
+.write-new-tweet {
+	font-size: 12px;
+	height: 15px;
+	width: 250px;
+	padding: 8px;
+	border: 1px solid #C6E8F5;
+	border-radius: 2px;
+}
+
+.main {
+	float: left;
+	margin: 10px;
+  width:590px;
+  background-color: white;
+  border-radius: 6px;
+  position: relative;
+  display: block;
+}
+
+.main-header {
+	font-size: 20px;
+	padding: 15px;
+	color: #777;
+	font-weight: 200;
+}
+
+.main-tweets-container {
+	padding: 15px;
+	border-top: 1px solid #E8E8E8;
+	background-color: white;
+  border-radius: 0 0 6px;
+  display: flex	;
+  cursor: pointer;
+}
+
+.main-tweets-container aside {
+	margin-right: 8px;
+}
+
+.dp-tweets {
+	height: 48px;
+	width: 48px;
+	border-radius: 5px;
+}
+
+.tweeter-name a {
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+}
+
+.tweeter-name p {
+	font-size: 13px;
+	cursor: pointer;
+	color: #999;
+}
+
+.tweeter-text p {
+	padding: 17px 0px 15px;
+	display: block;
+	position: absolute;
+	left: 70px;
+	font-size: 14px;
+}
+
+.tweeter-text img {
+	width: 200px;
+	padding: 10px ;
+}
+
+.tweeter-name a:hover {
+	text-decoration: underline;
+	color: #244C78;
+}
+
+.small-links a {
+	color: #999;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: normal;
+	margin: 10px 15px;
+}
+
+.small-links a:hover {
+	text-decoration: underline; 
+}
+
 
